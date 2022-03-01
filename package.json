@@ -8,5 +8,17 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jssantos395/project-3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jssantos395/project-3/issues"
+  },
+  "homepage": "https://github.com/jssantos395/project-3#readme"
 }
