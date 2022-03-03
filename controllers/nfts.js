@@ -18,5 +18,11 @@ router.delete('/:id', (req, res)=>{
     });
 });
 
+router.put('/:id', (req, res)=>{
+    Nfts.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedNft)=>{
+        res.json(updatedNft);
+    });
+});
+
 
 module.exports = router;

@@ -52,9 +52,8 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //___________________
 // Routes
 //___________________
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+const nftsController = require('./controllers/nfts.js');
+app.use('/nfts', nftsController);
 
 
 //___________________
