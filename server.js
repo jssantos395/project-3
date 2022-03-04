@@ -8,6 +8,8 @@ const app = express ();
 const db = mongoose.connection;
 const NFT = require('./models/nfts.js')
 require('dotenv').config()
+const cors = require('cors');
+
 //___________________
 //Port
 //___________________
@@ -47,6 +49,7 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
+app.use(cors());
 
 
 //___________________
