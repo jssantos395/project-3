@@ -2,9 +2,10 @@ const mongoose = require('mongoose');
 
 const nftSchema = new mongoose.Schema({
     name: String,
-    amount: [Number],
-    prices: [{String: Number}],
-    image: String,
+    age: String,
+    job_title: String,
+    mobile: String,
+    location: String,
     description: String
 });
 
