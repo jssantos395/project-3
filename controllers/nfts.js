@@ -3,7 +3,7 @@ const router = express.Router();
 const Nfts = require('../models/nfts.js');
 
 router.get('/', (req, res)=>{
-    res.send(req.body);
+    res.send('index');
 });
 
 router.post('/', (req, res)=>{
