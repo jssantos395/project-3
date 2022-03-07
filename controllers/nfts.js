@@ -3,7 +3,9 @@ const router = express.Router();
 const Nfts = require('../models/nfts.js');
 
 router.get('/', (req, res)=>{
-    res.send('index');
+  Nfts.find({}, (err, foundPosts) => {
+  res.json(foundPosts)
+})
 });
 
 router.post('/', (req, res)=>{
