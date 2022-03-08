@@ -15,7 +15,7 @@ router.post('/', (req, res)=>{
 });
 
 router.delete('/:id', (req, res)=>{
-    Nfts.findByIdAndRemove(req.params._id, (err, deletedNft)=>{
+    Nfts.findByIdAndRemove(req.params.id, (err, deletedNft)=>{
         res.json(deletedNft);
     });
 });
